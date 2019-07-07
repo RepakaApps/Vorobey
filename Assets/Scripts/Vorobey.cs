@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -32,7 +33,7 @@ public class Vorobey : MonoBehaviour
         else
         {
             Vector3 dir = new Vector3(hor, 0, 0);
-            transform.Translate(dir.normalized * Time.deltaTime * speed);
+           transform.Translate(dir.normalized * Time.deltaTime * speed);
             transform.localScale = new Vector2(-1, 1);
         }
     }
@@ -74,18 +75,23 @@ public class Vorobey : MonoBehaviour
                 MoveObjectLive.speed = 8f;
             }
 
+            ZvukChirik zv1 = GetComponent<ZvukChirik>();
+            zv1.Chirik();
             Destroy(other.gameObject);
         }
         else if (other.gameObject.CompareTag("Grenade"))
         {
+            ZvukGrenade zg = GetComponent<ZvukGrenade>();
             if (GameObject.Find("Lives3"))
             {
+                zg.Grenade();
                 Destroy(GameObject.Find("Lives3"));
                 sl.scoreLives = 2;
                 Destroy(other.gameObject);
             }
             else if (GameObject.Find("Lives2"))
             {
+                zg.Grenade();
                 Destroy(GameObject.Find("Lives2"));
                 sl.scoreLives = 1;
                 Destroy(other.gameObject);

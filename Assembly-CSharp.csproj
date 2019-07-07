@@ -76,6 +76,8 @@
     <Compile Include="Assets\Scripts\SpawnLives.cs" />
     <Compile Include="Assets\Scripts\SpawnSeed.cs" />
     <Compile Include="Assets\Scripts\Vorobey.cs" />
+    <Compile Include="Assets\Scripts\ZvukChirik.cs" />
+    <Compile Include="Assets\Scripts\ZvukGrenade.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/home/lesnik/Unity/Project/Vorobey/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
