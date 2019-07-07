@@ -13,10 +13,13 @@ public class Vorobey : MonoBehaviour
     {
         //Vector3 pos = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
         //transform.position = new Vector3(pos.x, transform.position.y, transform.position.z);
-        //if (pos.x <= 0) {
-        //transform.localScale = new Vector2(1, 1);
-        //} else {
-        //transform.localScale = new Vector2(-1, 1);
+        //if (pos.x <= 0)
+        //{
+        //    transform.localScale = new Vector2(1, 1);
+        //}
+        //else
+        //{
+        //    transform.localScale = new Vector2(-1, 1);
         //}
 
         float hor = Input.GetAxisRaw("Horizontal");
@@ -95,6 +98,7 @@ public class Vorobey : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("MaxScore", ScoreManager.score);
                 }
+
                 PlayerPrefs.SetInt("Score", ScoreManager.score);
                 SceneManager.LoadScene(2);
                 Destroy(gameObject);
