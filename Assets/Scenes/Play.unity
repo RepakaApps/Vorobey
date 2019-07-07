@@ -314,6 +314,8 @@ GameObject:
   - component: {fileID: 610874019}
   - component: {fileID: 610874018}
   - component: {fileID: 610874020}
+  - component: {fileID: 610874021}
+  - component: {fileID: 610874022}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -373,6 +375,37 @@ MonoBehaviour:
   - {fileID: 3530780305520491838, guid: 6b763aa151b042220bc52476d60164fb, type: 3}
   - {fileID: 3530780305520491838, guid: 6b763aa151b042220bc52476d60164fb, type: 3}
   - {fileID: 3530780305520491838, guid: 6b763aa151b042220bc52476d60164fb, type: 3}
+--- !u!114 &610874021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d31478d5c065ec2998f3f2cbe9e4d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: {fileID: 8735962457245621890, guid: a8932c708d1c84d138a2d7b2b4fc5183, type: 3}
+--- !u!114 &610874022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a2fa951c1e8b088965061f1882965d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  live:
+  - {fileID: 761440020648323613, guid: 0eec694a332b450d1b75479d487ac0d4, type: 3}
+  - {fileID: 761440020648323613, guid: 0eec694a332b450d1b75479d487ac0d4, type: 3}
+  - {fileID: 761440020648323613, guid: 0eec694a332b450d1b75479d487ac0d4, type: 3}
+  - {fileID: 761440020648323613, guid: 0eec694a332b450d1b75479d487ac0d4, type: 3}
+  - {fileID: 761440020648323613, guid: 0eec694a332b450d1b75479d487ac0d4, type: 3}
 --- !u!1 &667110989
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  lives: {fileID: 8735962457245621890, guid: a8932c708d1c84d138a2d7b2b4fc5183, type: 3}
 --- !u!50 &1741276321
 Rigidbody2D:
   serializedVersion: 4

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Vorobey : MonoBehaviour {
-
     public float speed = 3f;
 
     void FixedUpdate() {
@@ -35,25 +34,39 @@ public class Vorobey : MonoBehaviour {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(3f);
                 SpawnGrenade.waitForSeconds = new WaitForSeconds(4f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(4f);
                 MoveObjectSeed.speed = 2f;
                 MoveObjectGrenade.speed = 2.5f;
             } else if (ScoreManager.score > 10 && ScoreManager.score <= 70) {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(1.5f);
                 SpawnGrenade.waitForSeconds = new WaitForSeconds(2f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(18f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.1f;
                 MoveObjectGrenade.speed = MoveObjectGrenade.speed + 0.05f;
             } else if (ScoreManager.score > 70) {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(0.5f);
                 SpawnGrenade.waitForSeconds = new WaitForSeconds(1f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(16f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.3f;
                 MoveObjectGrenade.speed = MoveObjectGrenade.speed + 0.15f;
             } 
             Destroy(other.gameObject);
         } else if (other.gameObject.CompareTag("Grenade")) {
+            if (GameObject.Find("Lives3")) {
+                Destroy(GameObject.Find("Lives3"));
+                Destroy(other.gameObject);
+            } else if (GameObject.Find("Lives2")) {
+                Destroy(GameObject.Find("Lives2"));
+                Destroy(other.gameObject);
+            } else if (GameObject.Find("Lives1")) {
+                Destroy(GameObject.Find("Lives1"));
                 SceneManager.LoadScene(2);
                 Destroy(gameObject);
+            }
+        } else if (other.gameObject.CompareTag("Live")) {
+            Destroy(other.gameObject);
         }
     }
 }

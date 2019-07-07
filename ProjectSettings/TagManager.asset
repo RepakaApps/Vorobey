@@ -7,6 +7,7 @@ TagManager:
   - Seed
   - Vorobey
   - Grenade
+  - Live
   layers:
   - Default
   - TransparentFX
