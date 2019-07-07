@@ -42,17 +42,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9330}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9338}
     - Class: 114
-      Script: {instanceID: 9342}
-    - Class: 114
-      Script: {instanceID: 9386}
+      Script: {instanceID: 9344}
     - Class: 114
       Script: {instanceID: 9388}
     - Class: 114
-      Script: {instanceID: 9780}
+      Script: {instanceID: 9390}
+    - Class: 114
+      Script: {instanceID: 9784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -89,17 +89,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9330}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9338}
     - Class: 114
-      Script: {instanceID: 9342}
-    - Class: 114
-      Script: {instanceID: 9386}
+      Script: {instanceID: 9344}
     - Class: 114
       Script: {instanceID: 9388}
     - Class: 114
-      Script: {instanceID: 9958}
+      Script: {instanceID: 9390}
+    - Class: 114
+      Script: {instanceID: 9972}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -140,35 +140,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9298}
+      Script: {instanceID: 9300}
     - Class: 114
-      Script: {instanceID: 9330}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9338}
     - Class: 114
-      Script: {instanceID: 9342}
-    - Class: 114
-      Script: {instanceID: 9386}
+      Script: {instanceID: 9344}
     - Class: 114
       Script: {instanceID: 9388}
     - Class: 114
-      Script: {instanceID: 9560}
+      Script: {instanceID: 9390}
     - Class: 114
-      Script: {instanceID: 9662}
+      Script: {instanceID: 9562}
+    - Class: 114
+      Script: {instanceID: 9664}
     - Class: 114
       Script: {instanceID: 9776}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9780}
     - Class: 114
-      Script: {instanceID: 9938}
+      Script: {instanceID: 9786}
     - Class: 114
-      Script: {instanceID: 9956}
+      Script: {instanceID: 9952}
     - Class: 114
-      Script: {instanceID: 10436}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 10360}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 10452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -686,6 +686,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: cabf7045f8204a4bd8d13e682e96904d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnLive
+  - hash:
+      serializedVersion: 2
       Hash: afc5b93a7b192de2dcb3832fe35a5c7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -728,7 +734,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 46e52224c2f7ed389efcab9f393acc74
+      Hash: 55c47d27fe0a466fae97f2822600399c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnLives
@@ -836,6 +842,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoveObjectLive
+  - hash:
+      serializedVersion: 2
       Hash: 2267ba365123f7c728595e1dd4daa113
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -882,18 +894,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MoveObjectLive
-  - hash:
-      serializedVersion: 2
-      Hash: cabf7045f8204a4bd8d13e682e96904d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpawnLive
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
