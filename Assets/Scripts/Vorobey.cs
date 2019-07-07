@@ -91,10 +91,11 @@ public class Vorobey : MonoBehaviour
             {
                 Destroy(GameObject.Find("Lives1"));
                 sl.scoreLives = 0;
-                if (PlayerPrefs.GetInt("Score") < ScoreManager.score)
+                if (PlayerPrefs.GetInt("MaxScore") < ScoreManager.score)
                 {
-                    PlayerPrefs.SetInt("Score", ScoreManager.score);
+                    PlayerPrefs.SetInt("MaxScore", ScoreManager.score);
                 }
+                PlayerPrefs.SetInt("Score", ScoreManager.score);
                 SceneManager.LoadScene(2);
                 Destroy(gameObject);
             }

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\MoveObjectLive.cs" />
     <Compile Include="Assets\Scripts\MoveObjectSeed.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\ScoreSave.cs" />
     <Compile Include="Assets\Scripts\SpawnGrenade.cs" />
     <Compile Include="Assets\Scripts\SpawnLive.cs" />
     <Compile Include="Assets\Scripts\SpawnLives.cs" />
