@@ -45,28 +45,28 @@ public class Vorobey : MonoBehaviour
             {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(3f);
-                SpawnGrenade.waitForSeconds = new WaitForSeconds(4f);
-                SpawnLive.waitForSeconds = new WaitForSeconds(4f);
+                SpawnGrenade.waitForSeconds = new WaitForSeconds(6f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(40f);
                 MoveObjectSeed.speed = 2f;
-                MoveObjectGrenade.speed = 2.5f;
+                MoveObjectGrenade.speed = 4f;
             }
             else if (ScoreManager.score > 10 && ScoreManager.score <= 70)
             {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(1.5f);
-                SpawnGrenade.waitForSeconds = new WaitForSeconds(2f);
-                SpawnLive.waitForSeconds = new WaitForSeconds(18f);
+                SpawnGrenade.waitForSeconds = new WaitForSeconds(5f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(35f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.1f;
-                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 0.05f;
+                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 1f;
             }
             else if (ScoreManager.score > 70)
             {
                 ScoreManager.score++;
                 SpawnSeed.waitForSeconds = new WaitForSeconds(0.5f);
-                SpawnGrenade.waitForSeconds = new WaitForSeconds(1f);
-                SpawnLive.waitForSeconds = new WaitForSeconds(16f);
+                SpawnGrenade.waitForSeconds = new WaitForSeconds(4f);
+                SpawnLive.waitForSeconds = new WaitForSeconds(30f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.3f;
-                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 0.15f;
+                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 1.5f;
             }
 
             Destroy(other.gameObject);

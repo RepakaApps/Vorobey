@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObjectLive : MonoBehaviour {
+public class MoveObjectLive : MonoBehaviour
+{
+    public static float speed = 6f;
 
-    public static float speed = 3f;
-
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
 
-        if (transform.position.y < -5.1) {
+        if (transform.position.y < -5.1)
+        {
             Destroy(gameObject);
         }
     }
