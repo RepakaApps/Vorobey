@@ -41,7 +41,7 @@ public class Vorobey : MonoBehaviour
     private void OnCollisionStay2D(Collision2D other)
     {
         SpawnLives sl = gameObject.GetComponent<SpawnLives>();
-
+        
         if (other.gameObject.CompareTag("Seed"))
         {
             if (ScoreManager.score >= -2 && ScoreManager.score <= 10)
@@ -82,6 +82,7 @@ public class Vorobey : MonoBehaviour
         else if (other.gameObject.CompareTag("Grenade"))
         {
             ZvukGrenade zg = GetComponent<ZvukGrenade>();
+            
             if (GameObject.Find("Lives3"))
             {
                 zg.Grenade();
