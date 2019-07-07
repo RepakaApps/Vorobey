@@ -48,6 +48,7 @@ public class Vorobey : MonoBehaviour
                 SpawnLive.waitForSeconds = new WaitForSeconds(40f);
                 MoveObjectSeed.speed = 2f;
                 MoveObjectGrenade.speed = 4f;
+                MoveObjectLive.speed = 6f;
             }
             else if (ScoreManager.score > 10 && ScoreManager.score <= 70)
             {
@@ -56,7 +57,8 @@ public class Vorobey : MonoBehaviour
                 SpawnGrenade.waitForSeconds = new WaitForSeconds(5f);
                 SpawnLive.waitForSeconds = new WaitForSeconds(35f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.1f;
-                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 1f;
+                MoveObjectGrenade.speed = 4.5f;
+                MoveObjectLive.speed = 7f;
             }
             else if (ScoreManager.score > 70)
             {
@@ -65,7 +67,8 @@ public class Vorobey : MonoBehaviour
                 SpawnGrenade.waitForSeconds = new WaitForSeconds(4f);
                 SpawnLive.waitForSeconds = new WaitForSeconds(30f);
                 MoveObjectSeed.speed = MoveObjectSeed.speed + 0.3f;
-                MoveObjectGrenade.speed = MoveObjectGrenade.speed + 1.5f;
+                MoveObjectGrenade.speed = 5.5f;
+                MoveObjectLive.speed = 8f;
             }
 
             Destroy(other.gameObject);
@@ -88,6 +91,10 @@ public class Vorobey : MonoBehaviour
             {
                 Destroy(GameObject.Find("Lives1"));
                 sl.scoreLives = 0;
+                if (PlayerPrefs.GetInt("Score") < ScoreManager.score)
+                {
+                    PlayerPrefs.SetInt("Score", ScoreManager.score);
+                }
                 SceneManager.LoadScene(2);
                 Destroy(gameObject);
             }

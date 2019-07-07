@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\ButtonBack.cs" />
     <Compile Include="Assets\Scripts\ButtonMainMenu.cs" />
     <Compile Include="Assets\Scripts\Buttons.cs" />
+    <Compile Include="Assets\Scripts\MaxScore.cs" />
     <Compile Include="Assets\Scripts\MoveObjectGrenade.cs" />
     <Compile Include="Assets\Scripts\MoveObjectLive.cs" />
     <Compile Include="Assets\Scripts\MoveObjectSeed.cs" />
